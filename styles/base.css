@@ -45,11 +45,15 @@ main {
 }
 nav {
     display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px; 
+    grid-template-columns: 2fr; 
+    gap: 40px; 
     justify-items: center; 
-    background-color:#0b0b0a;
     color: white;
+    background-color:#0b0b0a;
+    content: white;
+    font-size: 30px;
+
+
 }
 
 
