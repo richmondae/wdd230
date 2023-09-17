@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica+IM+Fell+French+Canon+SC|Lato');
+
+body {
+    background-color: white;
+    color: #525252;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    max-width: 760px;
+    margin: 0 auto
+}
+header {
+    background-color: #0076b6;
+    color: white;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 80px;
+}
+
+header img{
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+    justify-items: center; 
+    background-color:#0b0b0a;
+    color: white;
+}
+
+
+header h1 {
+    font-size: 24px;
+    padding: 20px 0; 
+}
+
+
+header img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+
+h2 {
+    text-shadow: 5px 5px 10px grey;
+}
+h3 {
+    background-color: #0076b6;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px grey;
+    text-align: center;
+    padding: 10px 300px;
+}
+.card{
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 10px grey; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+p {
+    font-size: 19px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+    
+}
+
+hr {
+    margin-top: 20px;
+}
+
+#currentdate {
+    color: goldenrod;
+    font-weight: bold;
+}
+footer {
+    background-color: #0076b6;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    text-align: center;
+    padding: 20px 0; 
+}
