@@ -1,0 +1,35 @@
+@media (max-width: 32.5em) {
+
+    header, main, footer {
+        width: 80%;
+    }
+
+    #index-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #index-header * {
+        align-self: flex-start;
+    }
+
+    #index-header h1 {
+        margin: 0.5em;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    footer h3 {
+        margin: 0.5em;
+        margin-bottom: 0;
+    }
+
+    #design-principles-main {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr;
+    }
+
+    #planning-document-header .navbar .nav-links {
+        flex-direction: column;
+    }
+}
