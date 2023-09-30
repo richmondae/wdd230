@@ -5,7 +5,6 @@ body {
     color: #525252;
     font-family: Helvetica, sans-serif;
     font-size: 20px;
-    max-width: 760px;
     margin: 0 auto
 }
 header {
@@ -16,11 +15,13 @@ header {
     grid-template-columns: auto auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
+    padding: 30px;
 }
 
 header h1{
     text-align: center;
     padding-top: 80px;
+    display: inline;
 }
 
 header img{
@@ -34,7 +35,9 @@ header img{
 }
 
 h2 {
+    display: center;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 
@@ -44,17 +47,36 @@ main {
     justify-items: center; 
 }
 nav {
-    display: grid;
-    grid-template-columns: 2fr; 
-    gap: 40px; 
-    justify-items: center; 
+    background-color: black;
     color: white;
-    background-color:#0b0b0a;
-    content: white;
-    font-size: 30px;
-
-
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
 }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 80px;
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+    display: inline;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 25px;
+    display: inline-block;
+    justify-content: center;
+    justify-items: center; 
+}
+
 
 
 header h1 {
@@ -72,6 +94,9 @@ header img {
 
 h2 {
     text-shadow: 5px 5px 10px grey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 300px;
 }
 h3 {
     background-color: #0076b6;
