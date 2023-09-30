@@ -2,18 +2,17 @@
 
 body {
     background-color: white;
-    color: #525252;
+    color: black;
     font-family: Helvetica, sans-serif;
     font-size: 20px;
     margin: 0 auto
 }
 header {
-    background-color: #0076b6;
+    background-color: #3d314a;
     color: white;
     display: grid;
     box-sizing: border-box;
     grid-template-columns: auto auto;
-    border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
     padding: 30px;
     padding: 30px;
@@ -104,7 +103,7 @@ h2 {
     padding: 10px 300px;
 }
 h3 {
-    background-color: #0076b6;
+    background-color: #3d314a;
     color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
@@ -134,13 +133,12 @@ hr {
 }
 
 #currentdate {
-    color: white;
+    color: yellow;
     font-weight: bold;
 }
 footer {
-    background-color: #0076b6;
+    background-color: #3d314a;
     color: white;
-    border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
     text-align: center;
     padding: 20px 0; 
