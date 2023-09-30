@@ -56,6 +56,9 @@ nav {
     overflow: hidden;
     justify-content: center;
     justify-items: center;
+     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -71,10 +74,6 @@ nav ul li {
     justify-content: center;
     justify-items: center;
     display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
 }
 
 nav a {
