@@ -1,0 +1,102 @@
+/* Your existing mobile view styles here */
+
+/* iPad view styles here */
+
+/* Laptop view styles */
+@media only screen and (min-width: 1024px) {
+    /* Adjust the styles for laptops here */
+    /* For example: */
+    
+    /*----------- BODY --------------*/
+    
+    body {
+        max-width: 100%; /* Utilize the full screen width */
+    }
+
+    /*----------- HEADER --------------*/
+    
+    header {
+        max-width: 100%;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    header h1 {
+        display: inline;
+        font-size: 300%;
+        padding: 0;
+        margin-left: 4%;
+        text-align: bottom;
+        line-height: 620%;
+    }
+
+    #logo-image {
+        max-width: 150px; /* Adjust the logo size */
+        margin-left: 10%; /* Adjust margin-left */
+        padding: 0;
+    }
+
+    /*----------- NAVIGATION --------------*/
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+        font-weight: bold;
+      }
+    
+    nav {
+        max-width: 100%; /* Utilize the full screen width */
+        margin: 0 auto;
+    }
+
+    nav ul li a{
+        float: left;
+        max-width: auto;
+        padding: 10px; /* Adjust padding */
+        margin-top: 0;
+        margin-left: 20px; /* Adjust margin-left */
+        text-align: center;
+        border: 0;
+    }
+     
+    /*----------- MAIN --------------*/
+
+    main {
+        max-width: 100%; /* Utilize the full screen width */
+        padding: 20px; /* Adjust padding */
+    }
+
+    main ul li{
+        margin-left: 10%; /* Adjust margin-left */
+    }
+
+    .ul-li-2 {
+        margin-left: 5%; /* Adjust margin-left */
+    }
+
+    .ul-li-3 {
+        margin-left: 8%; /* Adjust margin-left */
+        text-align: left;
+    }
+
+    .ul-li-3 li {
+        margin-left: 0;
+    }
+
+    .color-scheme p {
+        text-align: center;
+    }
+
+    .p1 {
+        margin-top: 20px; /* Adjust margin-top */
+    }
+
+    main p {
+        text-align: center;
+    }
+
+    /* Footer styles here */
+}
