@@ -10,4 +10,10 @@
     nav ul li {
       flex: 1 1 100%;
     }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
   }
