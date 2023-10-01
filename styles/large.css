@@ -1,5 +1,7 @@
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 580px) {
+     h1 {
+    padding: 3rem;
+    }
     nav {
       justify-content: space-between;
       max-width: 100%;
@@ -9,9 +11,18 @@
     h1 {
       padding: 3rem;
     }
-    nav ul li {
+    .nav {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .nav {
+      display: block;
+      justify-content: center;
       flex: 1 1 100%;
-    }
+      margin: 0;
+  }
+
     
     #menu {
       display: none;
@@ -21,7 +32,7 @@
     display: flex;
     flex-direction: row;
        }
-    .navigation li {
+    .nav li {
      display: block;
      justify-content: center;
      flex: 1 1 100%;
@@ -60,5 +71,8 @@
         max-height: 400px;
         width: 87%;
        }
-
+    #flag{
+        width: 10%;
+    
+    }
 }
