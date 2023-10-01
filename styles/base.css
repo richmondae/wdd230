@@ -117,7 +117,7 @@ nav a {
 }
 nav a:hover {
     color: white;
-    text-shadow: 1px 1px rgb(52, 25, 96);
+    text-shadow: 1px 1px rgb(172, 159, 192);
 }
 
 .open li {
