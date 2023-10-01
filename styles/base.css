@@ -35,7 +35,7 @@ header h1{
     display: inline;
 }
 
-header img{
+img{
     width: 200px;
     position: relative;
     margin: 0 auto;
@@ -43,6 +43,9 @@ header img{
     padding-top:20px;
     padding-bottom: 20px;
     
+}
+h1 {
+    padding: 2rem;
 }
 
 h2 {
@@ -62,6 +65,7 @@ nav {
     background-color: black;
     color: white;
     list-style-type: none;
+    margin: 0 auto;
     
 }
 
@@ -87,11 +91,6 @@ ul a:hover {
     content: '✖';
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
 nav ul li {
     display: flex;
@@ -102,26 +101,22 @@ nav ul li {
     padding: .5rem;
 }
 
-.navbar li{
+.navigation li{
 display: none;
+color: white;
 }
 
-.navbar li a {
+.navigation li a {
+    color: white;
     display: block;
     text-align: center;
     text-decoration: none;
 }
 nav a {
-    text-decoration: none;
-    color: white;
-    padding: 14px 25px;
-    display: inline-block;
-    justify-content: center;
-    justify-items: center; 
+    padding: 1rem;
 }
-
 nav a:hover {
-    color: #3d314a;
+    color: white;
     text-shadow: 1px 1px rgb(52, 25, 96);
 }
 
@@ -133,7 +128,11 @@ nav a:hover {
 .open li a {
     display: block;
 }
-
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 ul a {
     color: #3d314a;
     padding-right: 1%;
@@ -148,8 +147,6 @@ ul a:hover {
 .active {
     border: 1px solid #E4EBDB;
 }
-
-
 
 header h1 {
     font-size: 24px;
@@ -186,6 +183,10 @@ h3 {
     box-shadow: 5px 5px 10px grey; 
     padding: 20px; 
     margin-bottom: 20px; 
+}
+#lessons {
+    text-align: left;
+    padding: 2%;
 }
 p {
     font-size: 19px;

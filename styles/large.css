@@ -1,38 +1,27 @@
 @media screen and (min-width: 580px) {
      h1 {
-    padding: 3rem;
+    padding: 10rem;
     }
-    nav {
-      justify-content: space-between;
-      max-width: 100%;
-      padding: 0 1rem;
-      display: flex;
-    }
+    body {
+      font-size: 1.5vw;
+  }
     h1 {
       padding: 3rem;
     }
     .nav {
       display: flex;
       flex-direction: row;
-  }
-
-  .nav {
-      display: block;
-      justify-content: center;
-      flex: 1 1 100%;
-      margin: 0;
-  }
-
-    
+  } 
     #menu {
       display: none;
     }
   
-    .nav {
+    .navigation {
     display: flex;
     flex-direction: row;
        }
-    .nav li {
+
+    .navigation li {
      display: block;
      justify-content: center;
      flex: 1 1 100%;
