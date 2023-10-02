@@ -15,20 +15,20 @@
   
   #hero-img {
     width: 80%; 
-    height: 1000px; 
+    height: 700px; 
     display: block; 
   }
   
   #hero-text {
     position: absolute; 
-    top: 70%;
-    right: 50%; 
+    top: 65%;
+    right: 55%; 
     background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     padding: 10px; 
     object-fit: cover;
     font-size: 50px;
-    font-family:Sedgwick Ave Display;
+    font-family: Sedgwick Ave Display;
   }
   
     #menu {
