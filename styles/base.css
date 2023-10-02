@@ -61,7 +61,7 @@ h2 {
   }
   
   #hero-text {
-    position: absolute;
+    position: block;
     top: 50%; 
     right: 60%;
     background-color: rgba(0, 0, 0, 0.7); 
