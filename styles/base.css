@@ -54,7 +54,23 @@ h2 {
     font-size: 20px;
 }
 
-
+  #hero-img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+  }
+  
+  #hero-text {
+    position: absolute;
+    top: 50%; 
+    right: 60%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 10px; 
+    font-size: 18px;
+    font-family: Sedgwick Ave Display;
+  }
+  
 main {
     display: block;
     grid-template-columns: 1fr; 
