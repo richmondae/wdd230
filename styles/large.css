@@ -20,7 +20,7 @@
   }
   
   #hero-text {
-    position: absolute; 
+    position: block; 
     top: 65%;
     right: 55%; 
     background-color: rgba(0, 0, 0, 0.7); 
