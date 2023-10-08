@@ -1,0 +1,426 @@
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    background-color: ghostwhite;
+  }
+  
+  body,
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /*----------- BODY --------------*/
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Merriweather", Arial, serif;
+  }
+  
+  p,
+  a {
+    font-family: "Raleway", Arial, sans-serif;
+    color: #00303f;
+  }
+  
+  #currentDate {
+    color: ghostwhite;
+    font-weight: bolder;
+  }
+  
+  /*----------- HEADER --------------*/
+  
+  /*.p-header {
+      text-align: center;
+      font-size: 102%;
+      max-width: 100%;
+      margin: 0;
+      background-color: #00303F;
+      padding: 2%;
+  }*/
+  
+  /*#message {
+      background-color: #00303F;
+      text-align: center;
+      font-family: 'Raleway', Arial, sans-serif;
+      padding: 0.5%;
+      border-bottom: 1px solid rgba(0,0,0,0.3);
+  }*/
+  
+  header#master.main-header {
+    margin-bottom: 50px;
+    background-color: ghostwhite;
+  }
+  
+  header img {
+    display: block;
+    max-width: 100px;
+    float: left;
+    margin: 0.2rem 2vw;
+  }
+  
+  header h1,
+  header h2 {
+    text-align: left;
+  }
+  
+  header h1 {
+    font-size: 110%;
+    margin-top: 2%;
+    padding-top: 7%;
+    margin-left: 30%;
+    color: #00303f;
+  }
+  
+  header h2 {
+    font-size: 80%;
+    margin-left: 30%;
+    color: #00303f;
+  }
+  
+  .date {
+    display: block;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 80%;
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 30%;
+    margin-left: 0;
+  }
+  
+  img#logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+    filter: brightness(1.2);
+  }
+  
+  .logo-img-footer {
+    filter: brightness(1.2);
+  }
+  
+  div.topbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #02254b;
+    box-sizing: border-box;
+  }
+  
+  .main-header {
+    position: relative;
+  }
+  
+  .topbar p {
+    color: ghostwhite;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  #date {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #currentDate {
+    font-size: 1.05rem;
+    margin-left: 10px;
+  }
+  
+  /*----------- NAVIGATION --------------*/
+  
+  nav {
+    background-color: ghostwhite;
+    margin-top: 5%;
+  }
+  
+  nav button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2.5%;
+    background-color: #02254b;
+    text-align: center;
+    border: none;
+    color: #fff;
+    padding: 1%;
+    border-radius: 5px;
+  }
+  
+  .clear-fix {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  #hamburgerBtn span:nth-child(1) {
+    display: block;
+  }
+  
+  #hamburgerBtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1) {
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(2) {
+    display: block;
+  }
+  
+  nav ul.open {
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0.8rem 2vw;
+    text-decoration: none;
+    color: #02254b;
+    font-size: 1.3em;
+    font-weight: bolder;
+  }
+  
+  .active {
+    border-bottom: 1px solid #ff8c00;
+  }
+  
+  nav ul li a:active {
+    border-bottom: 1px #ff8c00 solid;
+    color: #00303f;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 1px #ff8c00 solid;
+    color: #00303f;
+  }
+  
+  nav ul.open {
+    display: block;
+  }
+  
+  /*----------- MAIN --------------*/
+  
+  main {
+    background-color: white;
+    height: 100%;
+    padding-bottom: 2%;
+  }
+  
+  main h1 {
+    margin-left: 2.5%;
+    margin-top: 0;
+    padding-top: 2.5%;
+    margin-bottom: 2%;
+  }
+  
+  .home-grid {
+    margin-top: 0;
+    width: 120%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .home-grid div {
+    border: 0.1px solid silver;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px silver;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: silver;
+  }
+  
+  main figurepicture {
+    width: 100%;
+    margin: 0 0 0 2%;
+    float: right;
+  }
+  
+  main figure.picture img {
+    width: 100%;
+  }
+  
+  main figure.picture figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  
+  picture img {
+    align-self: center;
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
+  .link-5 {
+    text-align: center;
+    display: block;
+    flex-direction: row;
+  }
+  
+  .home-grid a {
+    width: 120%;
+  }
+  
+  .home-grid img {
+    margin-bottom: 5%;
+    border-radius: 2px;
+    
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+  
+  input[type="number"] {
+    max-width: 80%;
+    padding: 10px 10px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "sans-serif", "Arial", sans-serif, "Verdana",
+      sans-serif, "Helvetica", sans-serif;
+  }
+  
+  .cloudy {
+    margin-left: 10px;
+  }
+  
+  .wind-speed {
+    margin-left: -10px;
+  }
+  
+  .temperature {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  img.weather-icon {
+    width: 30px;
+    height: 170px
+  }
+  
+  button,
+  input {
+    overflow: auto;
+    color: #02254b;
+    margin-left: 20px;
+  }
+  
+  div.link-5 h2 {
+    margin-left: 50px;
+    color: #02254b;
+    font-size: 18px;
+  }
+  
+  div.link-5 {
+    background-color: ghostwhite;
+  }
+  
+  div.link-1 {
+    background-color: ghostwhite;
+  }
+  
+  /*----------- FOOTER --------------*/
+  
+  .logo-img-footer {
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  main.clearfix p {
+    font-size: 19px;
+    font-style: inherit;
+    font-weight: inherit;
+    font-family: Helvetica, Lato;
+    margin-bottom: 20px;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    overflow-wrap: break-word;
+    color: #02254b;
+  }
+  
+  p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    line-height: 28px;
+  }
+  
+  footer h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 2%;
+    color: white;
+  }
+  
+  footer p {
+    text-align: center;
+    color: white;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #02254b;
+    margin-top: 70px;
+  }
+  
+  .last-p {
+    font-size: 87%;
+    margin-left: 2.5%;
+    color: white;
+  }
+  #map {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    max-height: 150px;
+    border: 2px solid black;
+    border-radius: .5em;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+  footer a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  hr {
+    margin-top: 5%;
+  }
+ 
