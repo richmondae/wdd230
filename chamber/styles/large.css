@@ -20,16 +20,25 @@
   
     /*----------- NAVIGATION --------------*/
   
-    nav button {
-      display: none;
-    }
-  
-    nav ul {
+    #menu {
+        display: none;
+      }
+    
+      .navigation {
       display: flex;
       flex-direction: row;
-      margin-left: 10%;
-      font-weight: bold;
-    }
+         }
+  
+      .navigation li {
+       display: block;
+       justify-content: center;
+       flex: 1 1 100%;
+       margin: 0;
+      }
+  
+      nav a {
+          padding: 1rem;
+      }
   
     .active {
       color: #00303f;
