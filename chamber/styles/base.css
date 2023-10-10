@@ -51,7 +51,9 @@ body {
     float: left;
     margin: 0.2rem 2vw;
   }
-  
+  h2#weatherIcon{
+    background-color:#00303f ;
+  }
   header h1,
   header h2 {
     text-align: left;
@@ -149,7 +151,9 @@ body {
 #menu.open::before {
     content: '✖';
 }
-
+#weatherTxt{
+  font-size: 150px;
+}
 
 nav ul li {
     display: flex;
@@ -277,7 +281,9 @@ ul a:hover {
     border-radius: 20px;
     box-shadow: 2px 2px 5px silver;
   }
-  
+  .weathertxt{
+    font-size: large;
+  }
   input[type="submit"]:hover {
     background-color: silver;
   }
