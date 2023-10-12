@@ -44,6 +44,13 @@ img{
     padding-bottom: 20px;
     
 }
+#mode {
+	position: absolute;
+	top: 10rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
 h1 {
     padding: 2rem;
 }
