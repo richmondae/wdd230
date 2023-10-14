@@ -19,7 +19,21 @@
     }
   
     /*----------- NAVIGATION --------------*/
-  
+  /* Dark mode styles */
+.dark-mode {
+  background: #000;
+  color: #fff;
+}
+
+#mode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 100; /* Ensure it's on top of other elements */
+}
+
     #menu {
         display: none;
       }

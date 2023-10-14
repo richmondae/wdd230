@@ -20,7 +20,21 @@ body {
   }
   
   /*----------- BODY --------------*/
-  
+  /* Dark mode styles */
+.dark-mode {
+  background: #000;
+  color: #fff;
+}
+
+#mode {
+  position: absolute;
+  top: 4.5rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 100; /* Ensure it's on top of other elements */
+}
+
   h1,
   h2,
   h3 {
@@ -40,7 +54,7 @@ body {
   
   /*----------- HEADER --------------*/
   
-  header#master.main-header {
+  header {
     margin-bottom: 50px;
     background-color: ghostwhite;
   }
@@ -52,13 +66,25 @@ body {
     margin: 0.2rem 2vw;
   }
   h2#weatherIcon{
-    background-color:#00303f ;
+    background-color:#00303f solid ;
   }
   header h1,
   header h2 {
     text-align: left;
   }
-  
+  #join {
+    position: absolute;
+    bottom: 55px;
+    right: 930px;
+    background-color: #00303f;
+    font-weight: bolder;
+    color: black;
+    border: 2px ridge var(--accent1-color);
+    padding: .5rem;
+    box-shadow: black;
+    opacity: .75;
+}
+
   header h1 {
     font-size: 110%;
     margin-top: 2%;
