@@ -19,7 +19,12 @@
 </head>
 <body>
     <header>
-        <img class="portrait-photo" src="images/richmond.jpg" alt="portrait">
+         <div class="portrait-photo">
+            <picture>
+                <source srcset="images/richmond-small.webp" media="(max-wdith: 250px)">
+                <img id="photo" src="images/richmond-medium.webp" alt="Richmond on a Native Wear" width="533">
+            </picture>
+        </div>
         <h1>Richmond Effiom Akpama</h1>
     </header>
     <nav>
@@ -32,36 +37,41 @@
             <li> <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng"> Scripture</a></li>
           </ul>
     </nav>
-    <div id="hero">
-      <div id="hero-box">
-        <img id="hero-img" src="images/Abatemple.png" alt="Temple Picture">
-        <div id="hero-text"> Aba Nigeria Temple</div>
-      </div>
-    </div>
+
     <main>
+        <div class="hero">
+          <picture>
+              <source srcset="images\Abatemple -small.webp" media="(max-width: 500px)">
+              <source srcset="images\Abatemple -medium.webp" media="(max-wdith: 1000px)">
+              <img class="temple" src="images\Abatemple -large.webp" alt="Aba Nigeria Temple at Night" width="1500"
+                  height="750">
+          </picture>
+          <div class="herolabel">
+              <p>Aba Nigeria Temple</p>
+          </div>
+      </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="container"></div>
-        <section class="card">
+        <section id="card1" class="card">
             <h3>Learning Activities</h3>
-            <ul>
+            <ul id="lessons">
                 <li> 01:<a href="https://richmondae.github.io/wdd230/lesson01/holygrail.html">holylayout | <a href="https://codepen.io/richmondae/pen/RwEBZMe">js pen</a ></li>
                 <li> 02:<a href="https://richmondae.github.io/wdd230/lesson02/design-principle.html">Design principles | <a href="https://richmondae.github.io/wdd230/lesson02/media-query.html"> Media Queries </a > | <a href="https://richmondae.github.io/wdd230/lesson02/design.html"> design </a ></li>
                 <li> 03:<a href="http://richmondae.github.io/wdd230/lesson03/css-combinator.html">CSS Combinators</a> | <a href="https://codepen.io/richmondae/pen/PoXBKBg"> Pseudo Elements</a> | <a href="https://codepen.io/richmondae/pen/ZEVjbRg"> Hamburger Menu</a></li>
                 <li> 04:<a href="https://codepen.io/richmondae/pen/eYbbJaq">CSS Pseudo-Classes</a></li>
                 <li> 05: <a href="http://richmondae.github.io/wdd230/lesson05/bom.html">Book of Mormon Favorite Chapters Application</a></li>
-                <li> 06: <a href="#">Activity 6</a></li>
+                <li> 06: <a href="lesson06/images/landscape.webp">WebP</a>|<a href="lesson06/responsive-images.html" target="_blank">Responsive_Images</a></li>
                 <li> 07: <a href="#">Activity 7</a></li>
                 <li> 08: <a href="#">Activity 8</a></li>
                 <li> 09: <a href="#">Activity 9</a></li>
                 <li> 10: <a href="#">Activity 10</a></li>
             </ul>
         </section>
-        <section class="card">
+        <section id="card2" class="card">
             <h3>Information</h3>
             <p>Weather: Sunny</p>
             <p>Visits: 100</p>
             <p>City:Calabar, Nigeria</span></p>
-
         </section>
       </div>
     </main>
@@ -72,11 +82,10 @@
                  referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy; 2023 .:|:. Richmond Akpama. .:|:. Nigeria</p>
-        <img id="flag" src="images/Nigeria-flag.png.avif" alt=" Nigeria Flag">
+        <img id="flag" src="images/NigeriaFlagSmall.webp" alt=" Nigeria Flag">
         <p id="currentdate"></p>
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburger.js"></script>
-        <script src="scripts/mode.js"></script>
         </footer>
         <span id="currentdate"></span>
       </body>
