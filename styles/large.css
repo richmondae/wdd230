@@ -10,8 +10,8 @@
     }
     .nav {
       display: flex;
-      flex-direction: row;
-  } 
+      flex-direction: row; 
+    } 
   
   #menu {
       display: none;
