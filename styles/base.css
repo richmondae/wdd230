@@ -196,6 +196,19 @@ h3 {
     padding: 10px;
     margin: 0%;
 }
+#card2 {
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add padding to the section for spacing */
+}
+
+#card2 h4 {
+    margin: 0; /* Remove any default margin for the heading */
+}
+
+.label {
+    font-weight: bold; /* Optionally bold the label */
+}
+
 .card{
     background-color: #f9f9f9; 
     border: 1px solid #ddd; 

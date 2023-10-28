@@ -1,0 +1,21 @@
+img {
+
+    background: #F1F1FA;
+    display: block;
+    margin: 20px auto;
+    border: 0;
+    transition: filter 0.5s;
+  }
+  h1{
+  text-align: center;
+  }
+
+  #currentdate {
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+}
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+}

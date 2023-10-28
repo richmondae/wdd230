@@ -23,3 +23,40 @@ function calculateWindChill() {
 
 tempInput.addEventListener("input", calculateWindChill);
 speedInput.addEventListener("input", calculateWindChill);
+
+
+
+
+function loadDynamicModule(callback) {
+    const script = document.createElement('script');
+    script.src = 'dynamicModule.js';
+    script.onload = callback;
+    document.head.appendChild(script);
+  }
+  
+  // Usage
+  document.getElementById('loadButton').addEventListener('click', () => {
+    loadDynamicModule(() => {
+      const dynamicModule = window.dynamicModule.default(); // Assuming the module exports a default function
+      console.log(dynamicModule);
+    });
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const dynamicModule = await import('./dynamicModule.js');
+const result = dynamicModule.default(); // Assuming the module exports a default function
+console.log(result); // Output the result from the dynamically loaded module
