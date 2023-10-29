@@ -44,7 +44,7 @@ const darkP3 = document.querySelector(".footer-p-3");
 const darkP4 = document.querySelector(".footer-p-4");
 const darkP5 = document.querySelector(".last-p");
 
-// #00303F
+// Mode
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("🕶️")) {
         body.style.background = "#000";
@@ -82,3 +82,50 @@ modeButton.addEventListener("click", () => {
         darkP5.style.color = "white";
     }
 });
+
+// Lazy loading images
+const imagesToLoad = document.querySelectorAll('img[data-src]');
+
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
+
+const imgOptions = {
+  threshold: 0.5,
+  rootMargin: '0px 0px 50px 0px',
+};
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (items, observer) =>
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      }),
+    imgOptions
+  );
+  imagesToLoad.forEach((img) => observer.observe(img));
+} else {
+  imagesToLoad.forEach((img) => loadImages(img));
+}
+
+//visits
+const visitsDisplay = document.querySelector(".visits")
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `Congratulations on your first visit`
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+

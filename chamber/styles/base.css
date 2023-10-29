@@ -478,3 +478,109 @@ ul a:hover {
     margin-top: 5%;
   }
  
+  hr {
+  margin-top: 5%;
+}
+
+.joinContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+section.discover h2,
+section.discover p {
+  color: #02254b;
+  font-size: 20px;
+}
+
+
+
+section.discover p,
+.stats p {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+section {
+  border: 0.1px solid silver;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px silver;
+}
+
+.discover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.discover div {
+  margin: 0 auto;
+}
+
+.discoverContainer section {
+  background-color: ghostwhite;
+  border: 2px solid silver;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.discover h1 {
+  color: #02254b;
+}
+
+
+.lastVisitContainer {
+  margin-top: 30px;
+  border: 2px solid #ff8c00;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 0.3em;
+  text-align: left;
+  background-color: ghostwhite;
+}
+
+.lastVisitContainer p {
+  font-weight: bolder;
+}
+
+.membership {
+  background-color: ghostwhite;
+  margin-top: 30px;
+}
+
+.membership h2 {
+  text-align: center;
+  font-size: 15px
+}
+
+.membership ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  padding: 0.5em;
+}
+
+picture {
+  display: block;
+  margin-top: 3rem;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
