@@ -1,0 +1,64 @@
+table {
+    width: 90vh;
+    height: 70vh;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    box-shadow: 10px 10px 15px #afb6bb;
+    background-color: black;
+    font-weight: bold; /* Make text bold */
+    font-size: 35px;
+}
+
+table, tr, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    margin: auto;
+}
+th[strong='head'] {
+    font-size: 35px;
+    padding: 15px;
+    text-align: center;
+}
+th, td {
+    padding: 20px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+tbody tr:first-child, td.unique{
+    background-color: black; /* Apply black background to the first column */
+    color: white;
+}
+
+tbody tr:first-child td:nth-child(2), 
+tbody tr:first-child td:nth-child(3), 
+tbody tr:first-child td:nth-child(4) {
+    background-color: #333; /* Dark grey background for "Basic," "Premium," and "Deluxe" columns */
+    color: white;
+}
+
+
+thead tr {
+    font-size: 1.5rem;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color:white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:lightgrey;
+}
+caption {
+    caption-side: bottom;
+    font-size: 2.0rem;
+    padding: 15px;
+   }
