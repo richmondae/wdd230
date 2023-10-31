@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Capital Chamber of Commerce | Home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta name="author" content="Richmond Akpama">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Capital Chamber of Commerce Web Site" />
+        <meta property="og:title" content="Richmond Akpama - WDD 230 - Web Frontend Development">
+        <meta property="og:description" content="WDD 230 Web Frontend Development, Richmond Akpamam">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://richmondae.github.io/wdd230/">
+        <meta property="og:image" content="https://richmondae.github.io/wdd230/images/richmond.jpg">
+        <title> Richmond Akpama - WDD 230 - Web Frontend Development</title>
+        <link rel="icon" href="images\favicon.ico">
+        <link href="styles/normalize.css" rel="stylesheet" />
+        <link href="styles/base.css" rel="stylesheet" />
+        <link href="styles/meduim.css" rel="stylesheet" />
+        <link href="styles/large.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
+<body>
+ <!-- HEADER HERE -->
+ <header id="master" class="main-header">
+   <div class="topbar">
+     <div class="topbar_message">
+       <p>
+         Welcome to the Home of Investment. 🤝🏼 Come join us for the chamber
+         meet and greet Wednesday at 7:00 p.m.
+       </p>
+     </div>
+     <div id="date">
+       <span id="currentDate"></span>
+     </div>
+   </div>
+   <img
+   id="logo-image"
+   src="images/capital.webp"
+   alt="Capital Chamber of Commerce Logo"
+ />
+ <h1 id="title-page">Capital Chamber of Commerce</h1>
+ <h2>No 1. Real Estate Investment Platform</h2>
+ <div id="mode">🕶️</div>
+ <nav>
+   <button id="menu" title="Hamburger Menu"></button>
+   <ul class="navigation">
+     <li><a class="active" href="index.html">Home</a></li>
+     <li><a class="active" href="discover.html">Discover</a></li>
+     <li><a href="#">Directory</a></li>
+     <li><a class="active" href="join.html">Join</a></li>
+     <li><a href="#">Contact Us</a></li>
+   </ul>
+ </nav>
+   <div class="progress-container">
+     <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
+   </div>
+ </header>
+ <main class="joinContainer">
+   <h1>Sign up to join</h1>
+   <div>
+     <div class="membership">
+       <ul>
+         <li>
+           <h3>NP Membership</h3>
+           <p>
+             As a NP member, you are a non profit organization. Support will be provided for any events you plan to organize. There will be no fee collected for being a NP member.
+           </p>
+         </li>
+         <li>
+           <h3>Bronze Membership</h3>
+           <p>
+             As a Bronze member, you'll get 10% discount for city monthly trainings and 5% on advertising materials. This will also give you 1 free entry to an event each month and support provided for any events you will organize.
+           </p>
+           <p>
+             An annual fee of $220 will be collected for being a bronze member.
+           </p>
+         </li>
+         <li>
+           <h3>Silver Membership</h3>
+           <p>
+             As a Silver member, you'll get 20% discount for city monthly trainings and 15% on advertising materials. This will also give you 2 free entry to an event each month and support provided for any events you will organize. This will also promote your business in home page highlights for 2 weeks each month. Benefits also extends to your employees to get 15% off staying at any city choice hotels.
+           </p>
+           <p>
+             An annual fee of $380 will be collected for being a silver member.
+           </p>
+         </li>
+         <li>
+           <h3>Gold Membership</h3>
+           <p>
+             As a Gold member, you'll get 40% discount for city monthly trainings and 35% on advertising materials. This will also give you unlimited free entry to an event each month and support provided for any events you will organize.
+           </p>
+           <p>This will also promote your business in home page highlights for the duration of being a gold member. Benefits also extends to your employees to get 25% off staying at any city choice hotels. You will also enjoy priority pass membership for any conferences held by the city.</p>
+           <p>An annual fee of $750 will be collected for being a gold member.</p>
+         </li>
+       </ul>
+     </div>
+     <form
+       id="joinUs"
+       name="joinUs"
+       action="https://laurells.github.io/wdd230/chamber/thankyou.html"
+       method="get"
+     >
+       <label for="fname">First name</label><br />
+       <input
+         type="text"
+         id="fname"
+         name="fname"
+         autofocus
+         required
+       /><br /><br />
+       <label for="lname">Last name:</label><br />
+       <input type="text" id="lname" name="lname" required /><br /><br />
+
+       <label for="busname">Business position title</label><br />
+       <input
+         type="text"
+         id="busname"
+         name="busname"
+         pattern="[a-zA-Z -]{7,}"
+       /><small
+         >Accepts only alpha characters, hyphens, with at least 7
+         characters.</small
+       ><br /><br />
+
+       <label for="email">Email</label><br />
+       <input
+         type="email"
+         id="email"
+         name="email"
+         placeholder="your@email.com"
+         required
+       /><br /><br />
+
+       <label for="phone">Phone number:</label>
+       <input type="tel" id="phone" name="phone" required /><br /><br />
+
+       <label for="bustitle">Business name:</label>
+       <input
+         type="tel"
+         id="bustitle"
+         name="bustitle"
+         required
+       /><br /><br />
+
+       <label for="membership">Choose membership level:</label>
+       <select name="membership" id="membership">
+         <option value="" disabled selected>Select your option</option>
+         <option value="np">NP Membership</option>
+         <option value="bronze">Bronze Membership</option>
+         <option value="silver">Silver Membership</option>
+         <option value="gold">Gold Membership</option></select
+       ><br /><br />
+
+       <label for="busdesc">Business Description:</label>
+       <textarea
+         id="busdesc"
+         name="busdesc"
+         rows="4"
+         placeholder="Type your description here"
+       ></textarea
+       ><br /><br />
+       <input type="hidden" id="dateTime" name="dateTime" value="" />
+       <input class="submit" type="submit" value="Submit" />
+     </form>
+   </div>
+ </main>
+    <footer>
+        <div class="footer-div-1">
+          <img
+            class="logo-img-footer"
+            src="images/capital.webp"
+            alt="Capital Chamber of Commerce Logo"
+          />
+          <h2>Capital Chamber of Commerce</h2>
+          <p class="footer-p-1">Address: No 8, Paliamentary Extension, Calabar</p>
+          <p class="footer-p-2">Calabar, Nigeria</p>
+          <p class="footer-p-3">capicgroup.com</p>
+          <p class="footer-p-4">(+234)8144051202 | (+234)7026564401</p>
+  
+          <iframe id="map" title="Map of Calabar" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127188.17750038!2d8.265592320778298!3d5.
+                   000874874032993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067862eeaabcc29%3A0xa2b87
+                  22fb5b0b458!2sCalabar%2C%20Cross%20River!5e0!3m2!1sen!2sng!4v1696091492797!5m2!1sen!2sng"
+                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                   referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+        <hr />
+  
+        <p class="last-p">
+          &copy; <span id="year"></span> Capital Chamber of Commerce | Akpama
+          Richmond. | WDD 230 Project <span id="last-updated"></span>
+        </p>
+      </footer>
+  
+      <script src="scripts/main.js"></script>
+      <script src="scripts/windchill.js"></script>
+  
+    </body>
+  </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

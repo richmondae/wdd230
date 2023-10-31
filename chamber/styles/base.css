@@ -584,3 +584,96 @@ picture img {
   transition: filter 0.5s;
 }
 
+.joinContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+section.discover h2,
+section.discover p {
+  color: #02254b;
+  font-size: 20px;
+}
+
+
+
+section.discover p,
+.stats p {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+div.membership h2 {
+  text-decoration: underline;
+}
+
+.joinContainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+div.membership ul li p {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
+
+label,
+small {
+  color: white;
+}
+
+#joinUs {
+  align-self: center;
+  background-color: #02254b;
+  padding: 2em;
+  text-align: left;
+}
+
+input,
+select,
+textArea {
+  background-color: ghostwhite;
+  border-radius: 6px;
+  border: 0;
+  box-sizing: border-box;
+  color: #02254b;
+  font-size: 18px;
+  padding: 10px 10px;
+  width: 90%;
+}
+
+.submit {
+  background-color: white;
+  border-radius: 5px;
+  border: 0;
+  box-sizing: border-box;
+  color: #ff8c00;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+section {
+  border: 0.1px solid silver;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px silver;
+}
+
+.discover,
+.directory,
+.joinContainer,
+.thankYouContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
