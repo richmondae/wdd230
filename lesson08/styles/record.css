@@ -1,0 +1,26 @@
+/* Apply styles to the body or any specific elements in your "record.html" */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Apply styles to the footer if needed */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
