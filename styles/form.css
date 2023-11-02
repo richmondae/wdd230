@@ -42,3 +42,11 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+:root {
+    --background-color: #f0f0f0;
+    --font-family: Arial, sans-serif;
+    --button-background-color: #007bff;
+    --button-text-color: #fff;
+    --button-background-color-hover: #0056b3;
+}
