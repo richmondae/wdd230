@@ -1,6 +1,7 @@
 const baseURL = "https://richmondae.github.io/wdd230/";
 const linksURL = "https://richmondae.github.io/wdd230/data/links.json";
 
+
 async function fetchLinks() {
     try {
         const response = await fetch(linksURL);

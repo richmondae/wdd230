@@ -59,97 +59,25 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-
       <div class="progress-container">
-        <div class="progress-bar" id="progress" style="width: 92.9623%"></div> 
+        <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
       </div>
     </header>
-    <main class="clearfix">
-      <div class="home-grid">
-        <div class="link-1">
-          <figure class="picture">
-            <img
-              src="images/capital_chamber.jpg"
-              class="placeholder-1"
-              alt="placeholder-1"
-              sizes="50vw"
-              srcset="
-                images/capital_chamber-small.jpg  200w,
-                images/capital_chamber-medium.jpg 500w,
-                images/capital_chamber-large.jpg  800w
-              "
-            />
-            <figcaption>Invest with Capital Chamber</figcaption>
-          </figure>
-          <p>
-            You are Welcome to the capital investment's home! If you are looking
-            for properties to invest on consider Capital Investments.
-          </p>
-          <button id="join" title="Join">Join</button>
-        </div>
-        <div class="link-2">
-          <a href="#" class="#"
-            ><img
-              src="images/Commercial-Vs-Residential_02-750x370.jpg"
-              class="placeholder-2"
-              alt="placeholder-2"
-          /></a>
-        </div>
-        <div class="link-3">
-          <a href="#" class="link-3"
-            ><img
-              src="images/gettyimages-1299658677.jpeg"
-              class="placeholder-3"
-              alt="placeholder-3"
-          /></a>
-        </div>
-        <div class="link-4">
-          
-          <a href="#" class="#"
-            ><img
-              src="images/Sell-Property-Quickly.jpg"
-              class="placeholder-4"
-              alt="placeholder-4"
-          /></a>
-        </div>
-        <div class="link-5">
-          <h2>Local Weather</h2>
-          <img
-            id="weatherIcon"
-            src=""
-            alt=""
-          />
-          <span id="weatherTxt"></span>
-          <label>Temperature: <input type="number" id="temp"></label><br>
-          <br>
-          <label>Wind Speed: <input type="number" id="speed"></label><br>
-          <br>
-          <p>Windchill: N/A</p>
-          <p><span id="wind Chill"></span></p>
-          <p></p>
-          <p>NUMBER OF VISITS</p>
-        </div>
-        <div class="link-6">
-          <a
-            href="https://www.forbes.com/real-estate/?sh=7974e427730e"
-            class="link-6"
-            ><img
-              src="images/news.jpg"
-              class="placeholder-6"
-              alt="placeholder-6"
-          /></a>
-        </div>
-        <div class="link-7">
-          <a href="#" class="#"
-            ><img
-              src="images/Alaro-city-650x430.jpg"
-              class="placeholder-5"
-              alt="placeholder-5"
-            />
-          </a>
+    <main class="directory">
+      
+      <div class="menu">
+        <h1>Business Directory</h1>
+        <p>Choose layout</p>
+        <div>
+          <button id="grid">∷</button>
+          <button id="list">&#9776;</button>
         </div>
       </div>
+      <hr />
+      <div id="business" class="grid"></div>
     </main>
+
+      
     <footer>
       <div class="footer-div-1">
         <img
@@ -178,7 +106,8 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
+
 
   </body>
 </html>
