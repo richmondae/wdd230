@@ -8,11 +8,18 @@
     h1 {
       padding: 3rem;
     }
+    h2 {
+      display: center;
+      text-decoration: underline;
+      font-size: 20px;
+      font-size: 40px;
+      font-weight: bold;
+  }
     .nav {
       display: flex;
       flex-direction: row; 
     } 
-  
+
   #menu {
       display: none;
     }
