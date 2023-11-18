@@ -60,5 +60,19 @@
     
     }
 }
+#lessons {
+  text-align: left;
+  margin-left: 1%;
+}
 
+#lessons li {
+  margin-bottom: 20px; /* Add spacing between list items */
+}
+
+.lessons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: .5em;
+}
 

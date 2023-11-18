@@ -237,12 +237,9 @@ h3 {
     padding: 1%;
 }
 
-#condition {
-    text-transform: capitalize;
-}
 #card2 {
     text-align: center; /* Center text horizontally */
-    padding: 20px; /* Add padding to the section for spacing */
+    padding: 25px; /* Add padding to the section for spacing */
 }
 
 #card2 h4 {
@@ -310,8 +307,8 @@ footer {
 #card1 {
 
     background-color: #a7a5a3;
-    border: 1px solid #0a0909;
-    padding: 20px;
+    border: 1px solid #050505;
+    padding: 50px;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -329,21 +326,23 @@ footer {
 
 /* Style for the heading */
 #card2 h3 {
-    color: #000; /* Black */
+    color: white; 
     margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Style for the temperature */
 #card2 #current-temp {
-    font-size: 24px;
+    font-size: 54px;
     font-weight: bold;
     color: #000; /* Black */
 }
 
 /* Style for the weather icon */
 #card2 #weather-icon {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 100px;
+    max-height: 500px;
     margin-top: 10px;
 }
 
@@ -360,10 +359,14 @@ footer {
 #card2 .visits {
     font-size: 18px;
     color: #000; /* Black */
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Style for the city text */
 #card2 p:last-child {
     color: #000; /* Black */
     margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
