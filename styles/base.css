@@ -196,6 +196,50 @@ h3 {
     padding: 10px;
     margin: 0%;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.card {
+    margin-bottom: 2rem;
+    background-color: #d4d1ce;
+    color: black;
+    border: 2px solid black;
+    border-radius: .5em;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3), 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+#card1 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#card2 h4 {
+    padding: 1%;
+}
+
+#lessons {
+    text-align: left;
+    margin-left: 1%;
+}
+
+.lessons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: .5em;
+}
+
+#info {
+    padding: 1%;
+}
+
+#condition {
+    text-transform: capitalize;
+}
 #card2 {
     text-align: center; /* Center text horizontally */
     padding: 20px; /* Add padding to the section for spacing */
@@ -261,4 +305,65 @@ footer {
 #flag{
     width: 10%;
 
+    
+}
+#card1 {
+
+    background-color: #a7a5a3;
+    border: 1px solid #0a0909;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Style for the card container with id "card2" */
+#card2 {
+
+    background-color: #a7a5a3;
+    border: 1px solid #050505;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the heading */
+#card2 h3 {
+    color: #000; /* Black */
+    margin-bottom: 10px;
+}
+
+/* Style for the temperature */
+#card2 #current-temp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000; /* Black */
+}
+
+/* Style for the weather icon */
+#card2 #weather-icon {
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 10px;
+}
+
+/* Style for the condition text */
+#card2 #condition {
+    color: #000; /* Black */
+}
+
+/* Style for the label and visits */
+#card2 .label {
+    font-weight: bold;
+}
+
+#card2 .visits {
+    font-size: 18px;
+    color: #000; /* Black */
+}
+
+/* Style for the city text */
+#card2 p:last-child {
+    color: #000; /* Black */
+    margin-top: 10px;
 }

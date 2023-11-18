@@ -64,12 +64,18 @@
                 <li> 07: <a href="lesson07/lazyloading.html">Lazy loading </a>|<a href="lesson07/bom.html"> Bom Upgraded</a></li>
                 <li> 08: <a href="lesson08/tablebuild.html">Table Build|<a href="lesson08/form.html">Form Activity</a></li>
                 <li> 09: <a href="lesson09/scripts/new-ward-members.json">Json</a> |<a href="lesson09/prophets.html"> Activity: Latter-day Prophet Card Page </a></li>
-                <li> 10: <a href="#">Activity 10</a></li>
+                <li> 10: <a href="lesson10/weather.html">Weather API</a></li>
             </ul>
         </section>
         <section id="card2" class="card">
             <h3>Information</h3>
-            <p>Weather: Sunny</p>
+            <p> Current Weather: 
+                <figure>
+                    <p>Temp: <span id="current-temp"></span></p>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="condition"></figcaption>
+                </figure>
+            </p>
             <h4><span class="label">Page Visit: </span><br><span class="visits"></span></h4>
             <p>City:Calabar, Nigeria</span></p>
         </section>
@@ -87,6 +93,7 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/visitcount.js"></script>
+        <script src="scripts/weather.js"></script>
         </footer>
         <span id="currentdate"></span>
       </body>
