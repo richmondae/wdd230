@@ -336,7 +336,7 @@ footer {
 #card2 #current-temp {
     font-size: 54px;
     font-weight: bold;
-    color: #000; /* Black */
+    color: #3d314a; 
 }
 
 /* Style for the weather icon */
@@ -348,7 +348,7 @@ footer {
 
 /* Style for the condition text */
 #card2 #condition {
-    color: #3d314a; /* Black */
+    color: #3d314a; 
 }
 
 /* Style for the label and visits */
@@ -358,14 +358,14 @@ footer {
 
 #card2 .visits {
     font-size: 18px;
-    color: #3d314a; /* Black */
+    color: #3d314a; 
     font-size: 24px;
     font-weight: bold;
 }
 
 /* Style for the city text */
 #card2 p:last-child {
-    color: #3d314a; /* Black */
+    color: #3d314a; 
     margin-top: 10px;
     font-size: 24px;
     font-weight: bold;
