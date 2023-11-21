@@ -85,7 +85,20 @@
     #joinUs {
       width: 40%;
     }
-  
+    .event {
+    position: relative;
+    border: 3px ridge #293132;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 210%;
+}
     div.membership ul {
       display: block;
       list-style-type: disc;
