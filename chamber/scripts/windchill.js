@@ -1,5 +1,5 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=ebfd97e6480fd2f146e47e84870f7e7f";
-const apiURLW = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=ebfd97e6480fd2f146e47e84870f7e7f";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=91914a7113cb3976298a9d4c1b5266c2";
+const apiURLW = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=91914a7113cb3976298a9d4c1b5266c2";
 const imgURL = 'https://openweathermap.org/img/w/'
 
 
