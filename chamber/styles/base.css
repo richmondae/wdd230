@@ -72,17 +72,16 @@ body {
   header h2 {
     text-align: left;
   }
-  #join {
+  .button-box {
     position: absolute;
-    bottom: 55px;
-    right: 930px;
-    background-color: #00303f;
+    bottom: 75px;
+    background-color: #ff8c00;
     font-weight: bolder;
     color: black;
     border: 2px ridge var(--accent1-color);
     padding: .5rem;
     box-shadow: black;
-    opacity: .75;
+    text-align: center;
 }
 
   header h1 {
@@ -299,6 +298,7 @@ ul a:hover {
     width: 120%;
     display: flex;
     flex-wrap: wrap;
+    
   }
   
   .home-grid div {
@@ -307,9 +307,7 @@ ul a:hover {
     border-radius: 20px;
     box-shadow: 2px 2px 5px silver;
   }
-  .weathertxt{
-    font-size: large;
-  }
+
   input[type="submit"]:hover {
     background-color: silver;
   }
@@ -326,7 +324,11 @@ ul a:hover {
   
   main figure.picture figcaption {
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #02254b;
+    Text-align: center;
   }
   
   picture img {
@@ -363,25 +365,7 @@ ul a:hover {
     font-family: "Roboto", "sans-serif", "Arial", sans-serif, "Verdana",
       sans-serif, "Helvetica", sans-serif;
   }
-  
-  .cloudy {
-    margin-left: 10px;
-  }
-  
-  .wind-speed {
-    margin-left: -10px;
-  }
-  
-  .temperature {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  
-  img.weather-icon {
-    width: 30px;
-    height: 170px
-  }
+
   
   button,
   input {
@@ -394,16 +378,131 @@ ul a:hover {
     margin-left: 50px;
     color: #02254b;
     font-size: 18px;
+    overflow: hidden;
   }
   
   div.link-5 {
-    background-color: ghostwhite;
+    background-color: #02254b;
+
+  }
+  .link-5 h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #ff8c00;
+    text-align: center;
+}
+  .link-5 {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    font-size: 25px;
   }
   
+  h2 {
+    color: #02254b;
+  }
+  
+  img {
+    width: auto; /* Set your preferred width */
+    height: auto; /* Set your preferred height */
+    overflow: hidden;
+  }
+
+  p {
+    color: #02254b;
+    margin: 10px 0;
+  }
   div.link-1 {
     background-color: ghostwhite;
+    overflow: hidden;
   }
-  
+
+  .event {
+    position: relative;
+    border: 3px ridge #293132;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 210%;
+}
+
+.event h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #02254b;
+    text-align: center;
+}
+
+
+.event p {
+    margin: 10px 0;
+    color: #556877;
+}
+
+/* Add a subtle background color to alternate events for better readability */
+.event:nth-child(even) {
+    background-color: #f8f8f8;
+}
+.weatherSummary h3 {
+  font-size: 1em;
+  padding-bottom: 7px;
+}
+
+.weatherSummary span {
+  line-height: 15px;
+  font-size: 11.5px;
+}
+
+/* FORECAST AND TABLE */
+.five-day {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 650px;
+  background-color: #02254b;
+}
+.five-day div.box {
+  border: solid 0.5px black;
+  text-align: center;
+}
+.five-day img {
+  margin: 0 auto;
+  display: block;
+  margin: 10px auto;
+  transform: scale(1.5);
+  filter: drop-shadow(1px 1px 1px black);
+  width: 50%;
+}
+.five-day span.topp {
+  border-bottom: solid;
+  border-bottom-color: black;
+  color: black;
+  font-size: 1.3rem; 
+}
+.five-day span.data {
+  color: black;
+  text-align: center;
+  padding: 0.5rem;
+  display: block;
+}
+
+.forecast-h3 {
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: double;
+}
+
+
   /*----------- FOOTER --------------*/
   
   .logo-img-footer {

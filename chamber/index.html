@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html lang="en-us">
@@ -40,7 +41,6 @@
           <span id="currentDate"></span>
         </div>
       </div>
-
       <img
         id="logo-image"
         src="images/capital.webp"
@@ -85,7 +85,11 @@
             You are Welcome to the capital investment's home! If you are looking
             for properties to invest on consider Capital Investments.
           </p>
-          <button id="join" title="Join">Join</button>
+          <p>Number of Visits to Page: <span class="visits"></span></p>
+
+          <div class='button-box'>
+            <a class='Join' href="Join.html">Join The Chamber</a>
+        </div> 
         </div>
         <div class="link-2">
           <a href="#" class="#"
@@ -113,21 +117,12 @@
           /></a>
         </div>
         <div class="link-5">
-          <h2>Local Weather</h2>
-          <img
-            id="weatherIcon"
-            src=""
-            alt=""
-          />
-          <span id="weatherTxt"></span>
-          <label>Temperature: <input type="number" id="temp"></label><br>
-          <br>
-          <label>Wind Speed: <input type="number" id="speed"></label><br>
-          <br>
-          <p>Windchill: N/A</p>
-          <p><span id="wind Chill"></span></p>
-          <p></p>
-          <p>NUMBER OF VISITS</p>
+          <h3>Weather Summary</h3>
+                <span>Currently: </span><span id="condition">Cloudy</span><br>
+                <span>Temperature: </span><span id="temp">50</span><br>
+                <span>Wind Chill: </span><span id="windchill">N/A</span><br>
+                <span>Humidity: </span><span id="humidity">69</span><br>
+                <span>Wind Speed: </span><span id="windspeed">8</span><br>
         </div>
         <div class="link-6">
           <a
@@ -148,7 +143,50 @@
             />
           </a>
         </div>
-      </div>
+       
+      <section class="forecast">
+          <section class="forecastSec">
+              <h3 class="forecast-h3">Weather Forecast</h3>
+              <div class="five-day">
+                  <div class="box">
+                      <span class="topp" id="day1"></span>
+                      <img src="#" alt="#" id="icon1">
+                      <p><span class="data" id='forecast1'></span></p>
+                  </div>
+                  <div class="box">
+                      <span class="topp" id='day2'></span>
+                      <img src="#" alt="#" id="icon2">
+                      <p><span class="data" id='forecast2'></span></p>
+                  </div>
+                  <div class="box">
+                      <span class="topp" id="day3"></span>
+                      <img src="#" alt="#" id='icon3'>
+                      <p><span class="data" id='forecast3'></span></p>
+                  </div>
+                  <div class="box">
+                      <span class="topp" id="day4"></span>
+                      <img src=" #" alt="# " id='icon4'>
+                      <p><span class="data" id='forecast4'></span></p>
+                  </div>
+                  <div class="box">
+                      <span class="topp" id="day5"></span>
+                      <img src="#" alt="#" id='icon5'>
+                      <p><span class="data" id='forecast5'></span></p>
+                  </div>
+              </div>
+              <h3 class="forecast-h3">Weather Forecast</h3>
+          </section>
+      </section>
+      <section id="events" class="event-card">
+        <div class="event">
+          <h3>Capital Chamber of Commerce Events</h3>
+            <p>Christmas Party: 26th december, 7:00 p.m.</p>
+            <p>Award Night: 5th december, 4:00 p.m.</p>
+            <p>Location: Chamber Headquarters</p>
+        </div>
+        <!-- Add more events as needed -->
+    </section>
+    
     </main>
     <footer>
       <div class="footer-div-1">
