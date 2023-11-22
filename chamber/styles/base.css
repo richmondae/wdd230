@@ -494,6 +494,7 @@ ul a:hover {
   text-align: center;
   padding: 0.5rem;
   display: block;
+  font-size: 20px;
 }
 
 .forecast-h3 {
