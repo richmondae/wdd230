@@ -1,0 +1,114 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Scoots Home | Reservations | Rentals | Tour | Contactus</title>
+    <meta name="author" content="Richmond Akpama">
+    <meta name="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <meta property="og:title" content="Richmond Akpama - Scoots - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <meta property="og:url" content="https://richmondae.github.io/wdd230/scoots/index.html">
+</head>
+<body>
+    <section class="nav-frame">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="/scoots/index.html">Home</a>
+            <a href="/scoots/rentals.html">Rentals</a>
+            <a href="/scoots/reservations.html">Reservations</a>
+            <a href="/scoots/tours.html">Tours</a>
+            <a href="/scoots/contact.html">Contact Us</a>
+        </nav>
+
+        <!-- hamberger button -->
+        <button id="menu" title="Hamburger Menu"></button>
+    </section>
+    <header>
+        <div class="header-banner">
+            <h1>SCOOTS</h1>
+            <h2>Scooter Rentals</h2>
+
+            <a class='book' href="reservations.html">MAKE A RESERVATION</a>
+        </div> 
+    </header>
+    
+    <main>
+        <section class="homeInfoSection">
+            <div class="card">
+                <img class="infoImg" src="images/austin-neill.jpg" alt="jeep image">
+                <div class="container">
+                    <h3><b>JEEPS</b></h3>
+                    <p>4-door Jeep Wrangler<br>manual with A/C <br>5 people max</p>
+                    <p>2-door Jeep Wrangler <br> open air <br>manual<br>4 people max</p>
+                    <a href="/scoots/reservations.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="infoImg" src="images/anastasiia-tarasova.jpg" alt="motor scooter">
+                <div class="container">
+                    <h3><b>MOTOR SCOOTERS</b></h3>
+                    <p>Honda Metropolitan (49cc)<br>1 person</p>
+                    <p>Honda Dio (110cc)<br> 2 person</p>
+                    <p>Honda PCSX150 (149cc)<br>2 person</p>
+                    <a href="/scoots/reservations.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="infoImg" src="images/roberto-nickson.jpg" alt="ATV image">
+                <div class="container">
+                    <h3><b>ATV</b></h3>
+                    <p>Honda Pioneer 1000  <br> 4 persons</p>
+                    <br><br><br><br><br><br><br>
+                </div>
+                <a href="/scoots/reservations.html" class="button">MAKE A RESERVATION</a>
+            </div>
+        </section>
+        <section class="weatherSection">
+            <div class="weatherSummary">
+                <h4>Today's Weather</h4>
+                <span>Currently: </span><span id="condition">Cloudy</span><br>
+                <span>Temperature: </span><span id="temp">50</span><br>
+                <span>Humidity: </span><span id="humidity">69</span><br>
+                <span>Wind Speed: </span><span id="windspeed">8</span><br>
+            </div>
+
+            <div class="weatherSummary">
+                <h4>Tommorow's Weather</h4>
+                <p> 
+                    <figure>
+                        <p>Temp: <span id="current-temp"></span></p>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption id="condition"></figcaption>
+                        <span></span><br>
+                    </figure>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Scoots 2023 | Richmond Akpama | WDD 230 Final Project | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/forecast.js"></script>
+</body>
+</html>

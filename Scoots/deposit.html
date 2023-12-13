@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Scoots Home | Reservations | Rentals | Tour | Contactus</title>
+    <meta name="author" content="Richmond Akpama">
+    <meta name="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <meta property="og:title" content="Richmond Akpama - Scoots - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <meta property="og:url" content="https://richmondae.github.io/wdd230/scoots/deposit.html">
+</head>
+
+<body>
+    <section class="nav-frame">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+        </div>
+        <nav class="navigation">
+            <a href="/scoots/index.html">Home</a>
+            <a href="/scoots/rentals.html">Rentals</a>
+            <a href="/scoots/reservations.html">Reservations</a>
+            <a href="/scoots/tours.html">Tours</a>
+            <a href="/scoots/contact.html">Contact Us</a>
+        </nav>
+
+        <!-- hamberger button -->
+        <button id="menu" title="Hamburger Menu"></button>
+    </section>
+    <header>
+        <div class="header-banner">
+            <h1>SCOOTS</h1>
+            <h3>Scooter Rentals</h3>
+        </div>
+    </header>
+    <main>
+        <form method="post" action="process_deposit.php">
+            <fieldset>
+                <legend>Deposit Information</legend>
+                <label class="top">Amount to Deposit
+                    <input type="number" name="depositAmount" required>
+                </label>
+                <label class="top">Card Number
+                    <input type="text" name="cardNumber" placeholder="Enter your card number" required>
+                </label>
+                <label class="top">Expiration Date
+                    <input type="text" name="expirationDate" placeholder="MM/YYYY" required>
+                </label>
+                <label class="top">CVV
+                    <input type="text" name="cvv" placeholder="Enter CVV" required>
+                </label>
+            </fieldset>
+            <a class='book' href="thankyou.html"> Submit Deposit</a>
+        </form>
+    </main>
+    <footer>
+        &copy; Scoots 2023 | Richmond Akpama | WDD 230 Final Project | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
